@@ -1,0 +1,22 @@
+<div class="container p-4">
+    <div class="row">
+        {{#each pets}}
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <a href="{{Fecha_Nacimiento}}">
+                            <h3 class="card-title text-uppercase">
+                                {{Nombre}}
+                            </h3>
+                        </a>
+                        <p class="m-2">{{Raza}}</p>
+                        <p>{{timeago timestamp}}</p>
+                        <a href="/links/delete/{{id}}" class="m-2 btn btn-danger">Eliminar mascota</a>
+                        <a href="" class="btn btn-secondary">Editar Mascota</a>
+                    </div>
+                </div>
+            </div>
+
+        {{/each}}
+    </div>
+</div>
